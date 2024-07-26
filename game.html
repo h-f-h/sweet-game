@@ -1,0 +1,82 @@
+﻿<!doctype html>
+<html lang="">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta name="author" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <!-- CSS -->
+    <!--<link href="styles/reset.css" rel="stylesheet" />-->
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-3.6.0.min.js"></script>
+    <script src="jScripts/JavaScript.js" type="text/javascript"></script>
+</head>
+<body id="game" onload="game()">
+    <header>
+   <nav id="breadcrumbs" aria-label="breadcrumb">
+                <ul>
+                    <li>
+                        <a href="index.html">דף הבית</a>
+                    </li>
+                    <li>משחק</li>
+                </ul>
+            </nav>
+    </header>
+    <div id="container">
+        <div id="input">
+
+            <fieldset id="iceCreamBolls">
+                <legend>בחרו מספר כדורים</legend>
+                <input type="radio" id="option1" name="iceCream" value="1" onclick="radioBTN()" />1 <br />
+                <input type="radio" id="option2" name="iceCream" value="2" onclick="radioBTN()" />2 <br />
+                <input type="radio" id="option3" name="iceCream" value="3" onclick="radioBTN()" />3 <br />
+            </fieldset>
+            <br />
+            <fieldset id="iceCreamAdding">
+                <legend> תוספות לגלידה</legend>
+                <input type="checkbox" id="chocolate" onclick="adding1BTN()" /> פצפוצי שוקולד <br />
+                <input type="checkbox" id="sprinkles" onclick="adding2BTN()" /> סוכריות צבעוניות <br />
+                <input type="checkbox" id="almonds" onclick="adding3BTN()" /> אגוזים
+            </fieldset>
+            <div id="userOrderText">
+                שם המזמין
+                <input type="text" id="userName" onchange="changeName()" /> <br />
+                <textarea id="orderComments" placeholder="הערות..." rows="5"></textarea>
+            </div>
+        </div>
+        <span id="result"></span>
+        <br />
+        <div>
+            <div id="cone">
+                <img src="images/cone.png" />
+                <div class="iceCreamFlavor" id="choclateball"> <img src="images/choclate ball.png" /> </div>
+                <div class="iceCreamFlavor" id="strawbery"> <img src="images/strawbery.png" /> </div>
+                <div class="iceCreamFlavor" id="vanil"> <img src="images/vanil.png" /> </div>
+            </div>
+        </div>
+        <br />
+        <div id="adding">
+            <div class="iceCreamadd" id="addChoclate">
+                <img src="images/choclate.png" alt="שוקולד" />
+            </div>
+            <div class="iceCreamadd" id="addsprinkles">
+                <img src="images/sprinkls.png" alt="סוכריות צבעוניות" />
+            </div>
+            <div class="iceCreamadd" id="addalmonds">
+                <img src="images/almonds.png" alt="אגוזים" />
+            </div>
+        </div>
+        <br />
+        <input id="sent_order" type="button" value="שלח הזמנה" onclick="orderSummery()" />
+
+        <br /> <br />
+        <div id="result"></div>
+        <br />
+        <input id="play_again" type="button" value="שחק שוב" onclick="game()"   />
+    </div>
+</body>
+</html>

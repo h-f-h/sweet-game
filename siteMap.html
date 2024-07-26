@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>מפת האתר - SweetFreeze</title>
+    <meta name="description" content="מפת האתר של SweetFreeze. גלו את כל הדפים באתר כולל דף הבית, אודות, צור קשר ועוד." />
+    <meta name="keywords" content="מפת האתר, SweetFreeze, גלידה, היסטוריה, טעמים, גביעים, צור קשר, אודות" />
+    <meta name="author" content="פראדי הלפרין, נוי רומאני" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/logo-sweetfreeze.png" />
+
+</head>
+<body id="map">
+    <nav id="mainNav" aria-label="main navigation">
+        <ul>
+            <li>
+                <a href="index.html">
+                    <img class="logo" src="images/logo-sweetfreeze.png" alt="לוגו SweetFreeze" />
+                </a>
+            </li>
+            <li><a href="about.html">אודות</a> </li>
+            <li>
+                <a class="emptyHyperLink" href="#">הגלידה</a>
+                <nav id="navIceCream" aria-label="ice cream menu">
+                    <ul>
+                        <li><a href="icecreamHistory.html">היסטוריה של הגלידה</a></li>
+                        <li><a class="emptyHyperLink" href="#">טעמים אהובים</a></li>
+                        <li><a class="emptyHyperLink" href="#">טעמים מוזרים</a></li>
+                        <li><a class="emptyHyperLink" href="#">מה עם פרווה?</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li>
+                <a class="emptyHyperLink" href="#">הגביע</a>
+                <nav id="navCone" aria-label="cone menu">
+                    <ul>
+                        <li><a class="emptyHyperLink" href="#">מקור הגביע</a></li>
+                        <li><a class="emptyHyperLink" href="#">כוס או גביע</a></li>
+                        <li><a href="coneTypes.html">סוגי גביעים</a></li>
+                        <li><a class="emptyHyperLink" href="#">צורת הגביע</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="contactUs.html">צור קשר</a></li>
+            <li><a href="siteMap.html">מפת האתר</a></li>
+            <li><a href="game.html">משחק</a></li>
+        </ul>
+    </nav>
+
+    <nav id="breadcrumbs" aria-label="breadcrumb">
+        <ul>
+            <li><a href="index.html">דף הבית</a></li>
+            <li>מפת האתר</li>
+        </ul>
+    </nav>
+
+    <div class="circle" id="circle2"></div>
+
+    <br />
+    <header>
+        <h1>מפת האתר</h1>
+    </header>
+    <main>
+        <div class="sitemap" aria-label="site map">
+            <div class="item">
+                <div class="icon">
+                    <img src="images/home page.png" alt="Home Page" />
+                </div>
+                <p><a href="index.html">דף הבית</a></p>
+            </div>
+            <div class="sub-items">
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/ice cream.png" alt="ice cream" />
+                    </div>
+                    <p><a class="emptyHyperLink" href="#">הגלידה</a></p>
+                    <div class="sub-items" aria-label="ice cream sub menu">
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/history.png" alt="Ice Cream History" />
+                            </div>
+                            <a href="icecreamHistory.html">היסטוריה של הגלידה</a>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/favor.png" alt="Favorite Flavors"/>
+                            </div>
+                            <a class="emptyHyperLink" href="#">טעמים אהובים</a>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/wird.png" alt="Weird Flavors" />
+                            </div>
+                            <a class="emptyHyperLink" href="#">טעמים מוזרים</a>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/parve.png" alt="Parve Flavors" />
+                            </div>
+                            <a class="emptyHyperLink" href="#">מה עם פרווה?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/the cone.png" alt="cone" />
+                    </div>
+                    <p><a class="emptyHyperLink" href="#">הגביע</a></p>
+                    <div class="sub-items" aria-label="cone sub menu">
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/origin.png" alt="Cone Origin" />
+                            </div>
+                            <a class="emptyHyperLink" href="#">מקור הגביע</a>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/cup or cone.png" alt="Cup or Cone" />
+                            </div>
+                            <a class="emptyHyperLink" href="#">כוס או גביע</a>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/cone tipes.png" alt="Cone Types" />
+                            </div>
+                            <a href="coneTypes.html">סוגי גביעים</a>
+                        </div>
+                        <div class="item">
+                            <div class="icon">
+                                <img src="images/cone shape.png" alt="Cone Shape" />
+                            </div>
+                            <a class="emptyHyperLink" href="#">צורת הגביע</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/contact us.png" alt="contact us" />
+                    </div>
+                    <p><a href="contactUs.html">צור קשר</a></p>
+                </div>
+                <div class="item">
+                    <div class="icon">
+                        <img src="images/about.png" alt="About Us" />
+                    </div>
+                    <p><a href="about.html">אודות</a></p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

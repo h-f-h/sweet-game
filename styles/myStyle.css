@@ -1,0 +1,794 @@
+﻿/*Global Styles*/
+body {
+    direction: rtl;
+    font-family: Heebo, Rubik, sans-serif;
+    background-color: #f0f0f0;
+    width: 1280px;
+    margin: 0 auto;
+}
+
+h1 {
+    font-family: Heebo, Rubik, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 20px;
+    color: #D57777;
+}
+
+h2 {
+    font-size: 32px;
+    padding: 10px;
+    position: relative;
+    color: #F1EDE4;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+h3 {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #fae1dd;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+.footer {
+    margin-top: auto;
+    position: relative;
+    text-align: center;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+    .footer p {
+        margin: 5px 0;
+        color: #F6C8C8;
+        font-family: Heebo, Rubik, sans-serif;
+    }
+
+    .footer a {
+        color: #F6C8C8;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Heebo, Rubik, sans-serif;
+    }
+
+.emptyHyperLink {
+    cursor: not-allowed;
+}
+
+/*index*/
+#index #footer {
+        position: fixed;
+    }
+
+.circle {
+    width: 350px;
+    height: 350px;
+    border-radius: 50%;
+    position: fixed;
+}
+
+#circle1 {
+    background-color: #81b29a;
+    top: 87%;
+    left: 500px;
+}
+
+#circle2 {
+    background-color: #9d8189;
+    bottom: 87%;
+    right: 87%;
+    z-index: 2;
+}
+
+#circle3 {
+    background-color: #F4ACB7;
+    top: 30%;
+    left: 90%;
+    z-index: 0;
+}
+
+#homePageLogo {
+    position: relative;
+    top: 80px;
+    width: 40%;
+    right: 25%;
+}
+
+#homePage {
+    position: relative;
+    top: 40px;
+    left: 80px;
+    font-size: 80px;
+    font-weight: 900;
+}
+
+#homePageImage {
+    width: 600px;
+    height: 600px;
+    position: fixed;
+    right: 70%;
+    bottom: 0;
+}
+
+#sourcehomepageimag {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 5px 10px;
+    text-align: center;
+    font-family: Heebo, Rubik, sans-serif;
+    z-index: 10;
+}
+
+    #sourcehomepageimag p {
+        margin: 5px 0;
+        color: #F6C8C8;
+        font-family: Heebo, Rubik, sans-serif;
+    }
+
+    #sourcehomepageimag a {
+        color: #F6C8C8;
+        text-decoration: none;
+        font-size: 20px;
+        font-family: Heebo, Rubik, sans-serif;
+    }
+
+#mainNav {
+    width: 100%;
+    height: 50px;
+    background-color: #F6C8C8;
+    top: 0;
+    position: fixed;
+    z-index: 2;
+    right: 0;
+}
+
+.logo {
+    position: relative;
+    width: 80px;
+    bottom: 1000%;
+    padding-top: 0px;
+}
+
+    .logo:hover {
+        width: 90px;
+        top: 15%;
+    }
+
+#mainNav ul li {
+    font-family: Heebo, Rubik, sans-serif;
+    display: inline-block;
+    float: right;
+    margin-left: 100px;
+    position: relative;
+    padding-top: 10px;
+}
+
+    #mainNav ul li:hover {
+        font-weight: 700;
+    }
+
+a {
+    color: black;
+    font-size: 30px;
+    text-decoration: none;
+}
+
+#navIceCream,
+#navCone {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    width: 200px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+nav ul li:hover #navIceCream,
+nav ul li:hover #navCone {
+    display: block;
+    width: 250px;
+    height: max-content;
+}
+
+nav ul li:hover #navCone {
+    width: 170px;
+}
+
+#navIceCream a:hover,
+#navCone a:hover {
+    font-weight: 300;
+}
+
+#navIceCream a,
+#navCone a {
+    display: block;
+    font-size: 20px;
+    width: max-content;
+    text-align: center;
+}
+
+/*conesTypes*/
+#coneTypeContain {
+    position: relative;
+    top: 20px;
+    font-family: Heebo, Rubik, sans-serif;
+    left: 50px;
+}
+
+#coneTypesWeb h3 {
+    font-size: 30px;
+    padding: 10px;
+    background-color: #ffcad4;
+}
+
+.coneExplanation {
+    font-size: 18px;
+    line-height: 35px;
+    text-align: center;
+    position: relative;
+    background-color: #f8edeb;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+#coneTypeHeading {
+    text-align: center;
+}
+
+.cones {
+    border-radius: 50%;
+    width: 250px;
+    height: 250px;
+    background-color: #F3B7B7;
+    display: inline-block;
+    margin-left: 10px;
+    transition: all 0.5s linear;
+}
+
+.coneTypes {
+    display: none;
+}
+
+.cones:hover + .coneTypes {
+    display: block;
+    position: fixed;
+    text-align: center;
+    right: 25%;
+    width: 700px;
+    height: 80px;
+    top: 40%;
+    z-index: 5;
+}
+
+.cones:hover {
+    width: 270px;
+    height: 270px;
+    transition: all 0.2s ease-in;
+}
+
+.coneTypeSource {
+    float: left;
+    font-size: 12px;
+}
+
+#coneSecondRow,
+#coneFirstRow {
+    width: max-content;
+    display: block;
+    position: relative;
+    right: 14%;
+    margin-bottom: 80px;
+}
+
+#coneFirstRow {
+    margin-top: 10px;
+}
+
+/*about*/
+
+
+    #about .container {
+        text-align: right;
+        margin-right: 100px;
+        font-size: 20px;
+        position: absolute;
+        top: 20px;
+    }
+
+    #about #anderlogo {
+        position: relative;
+        bottom: 20px;
+        right: 270px;
+    }
+
+    #about #logo {
+        position: relative;
+        bottom: 0;
+        margin-bottom: 10px;
+        right: 290px;
+        width: 20%;
+    }
+
+.developer img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.developer {
+    text-align: center;
+    display: inline-block;
+    margin-right: 190px;
+    margin-top: 20px;
+}
+
+#about p {
+    font-family: Heebo, Rubik, sans-serif;
+    margin: 10px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.develptedPages a {
+    font-family: Heebo, Rubik, sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.container h3 {
+    font-size: 23px;
+    font-weight: 500;
+    padding-bottom: 10px;
+    height: max-content;
+}
+
+/*ice cream history*/
+#history {
+    background-color: #f0f0f0;
+    color: black;
+    display: flex;
+    direction: rtl;
+}
+
+    #history .container {
+        width: 1000px;
+        background-color: #f9f7f3;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        font-family: Heebo, Rubik, sans-serif;
+        position: absolute;
+        margin-right: 150px;
+        top: 20px;
+    }
+
+    #history .timeline {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px 0;
+        padding: 0;
+        list-style: none;
+        position: relative;
+        font-family: Heebo, Rubik, sans-serif;
+    }
+
+        #history .timeline:before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 6px;
+            background-color: #9D8189;
+        }
+
+    #history .timeline-item {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        position: relative;
+        margin: 10px 0;
+        right: 50%;
+    }
+
+    #history .timeline-date {
+        font-size: 1.2em;
+        color: #D57777;
+        font-weight: bold;
+        margin: 0 20px;
+        width: 70px;
+    }
+
+    #history .timeline-content {
+        background: #F7F4EF;
+        padding: 10px;
+        border: 2px solid #FAE1DD;
+        border-radius: 5px;
+        width: 300px;
+        display: flex;
+        align-items: center;
+        font-family: Heebo, Rubik, sans-serif;
+    }
+
+    #history .timeline-item img {
+        margin-right: 20px;
+        border-radius: 10px;
+        width: auto;
+        height: 200px;
+        position: relative;
+        border: 2px solid #FAE1DD;
+        left: 800px;
+    }
+
+    #history .circle {
+        position: absolute;
+        left: 98%;
+        background-color: #F4ACB7;
+        border-radius: 50%;
+        width: 20px;
+        height: 20px;
+        z-index: 1;
+    }
+
+/*site map*/
+#map main {
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+#map .sitemap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+#map .item {
+    text-align: center;
+    margin: 20px;
+    position: relative;
+}
+
+#map .sub-items {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+#map .icon {
+    width: 70px;
+    height: 70px;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #map .icon img {
+        max-width: 100%;
+        max-height: 100%;
+    }
+
+#map p {
+    margin: 0;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+#sitemap a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+#map .item a {
+    display: block;
+    padding: 10px;
+    background-color: #F6C8C8;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    font-size: 20px;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+    #map .item a:hover {
+        background-color: #FAE1DD;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+/*contectUs*/
+#contactus {
+    font-family: Heebo, Rubik, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-top: 7%;
+    margin-bottom: 7%;
+    direction: rtl;
+}
+
+    #contactus .contact-form-container {
+        background-color: #fff;
+        padding: 50px;
+        padding-top: 0;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        width: 600px;
+        height: max-content;
+        position: relative;
+        top: 50px;
+    }
+
+.contact-form-container h1 {
+    margin-top: 10px;
+}
+
+.contact-form-container p {
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+#contactus label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+#contactus input,
+#contactus textarea,
+#contactus select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+#contactus .radio-group {
+    display: flex;
+    justify-content: space-between;
+}
+
+    #contactus .radio-group label {
+        margin-right: 10px;
+    }
+
+#contactus .checkbox-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+    #contactus .checkbox-group label {
+        display: flex;
+        align-items: center;
+        margin-right: 10px;
+    }
+
+    #contactus .checkbox-group input {
+        margin-right: 5px;
+        margin-left: 5px;
+    }
+
+#contactus button {
+    width: 100%;
+    padding: 10px;
+    background-color: #f6c8c8;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    font-size: 16px;
+    cursor: pointer;
+    font-family: Heebo, Rubik, sans-serif;
+}
+
+    #contactus button:hover {
+        background-color: #d57777;
+    }
+
+.sectiontitle {
+    font-weight: 800;
+    color: #D57777;
+    padding: 10px;
+}
+
+
+/*breadcrumbs*/
+#breadcrumbs {
+    font-size: 12px;
+    margin: 20px 0;
+    padding: 0;
+    list-style: none;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    padding: 5px 10px;
+    z-index: 3;
+}
+
+    #breadcrumbs ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+    }
+
+    #breadcrumbs li {
+        margin: 0 5px;
+    }
+
+        #breadcrumbs li a {
+            color: #9D8189;
+            text-decoration: none;
+            font-size: 12px;
+            font-family: Heebo, Rubik, sans-serif;
+        }
+
+            #breadcrumbs li a:hover {
+                text-decoration: underline;
+            }
+
+        #breadcrumbs li::after {
+            content: ">";
+            margin-left: 5px;
+        }
+
+        #breadcrumbs li:last-child::after {
+            content: "";
+        }
+
+        #breadcrumbs li:last-child {
+            color: black;
+        }
+
+
+    /*game*/
+#game body {
+    font-family: Arial, sans-serif;
+    direction: rtl;
+    text-align: center;
+    direction: rtl;
+}
+
+#game #container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#game fieldset {
+    border: 2px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#game legend {
+    font-weight: bold;
+}
+
+#game input[type="radio"],
+#game input[type="checkbox"] {
+    margin: 10px 5px;
+}
+
+#userOrderText {
+    margin: 20px 0;
+}
+
+    #userOrderText input[type="text"],
+    #userOrderText textarea {
+        width: 80%;
+        padding: 10px;
+        margin-top: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+
+#game #input {
+    position: absolute;
+    right: 20%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#userOrderText,
+#iceCreamBolls,
+#iceCreamAdding {
+    flex: 1;
+    text-align: right; /* כדי לוודא שהטקסטים יהיו מיושרים לימין */
+}
+
+#game #cone {
+    position: absolute;
+    top: 45%;
+    width: 200px; /* התאמת הגודל לפי הצורך */
+    height: 300px; /* התאמת הגודל לפי הצורך */
+}
+
+.iceCreamFlavor {
+    position: relative;
+    width: 100px; /* התאמת הגודל לפי הצורך */
+    height: 100px; /* התאמת הגודל לפי הצורך */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+#choclateball {
+    bottom: 530px; /* גובה מעל הגביע */
+    right: -75px;
+}
+
+#strawbery {
+    bottom: 700px; /* גובה מעל השוקולד */
+}
+
+#vanil {
+    bottom: 950px; /* גובה מעל התות */
+}
+
+#adding {
+    position: absolute;
+    right: 70%;
+    top: 5%;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.iceCreamadd img {
+    width: 100px; /* התאמת הגודל לפי הצורך */
+    height: auto;
+}
+
+#game #result {
+    position: absolute;
+    bottom: 20%;
+    right: 70%;
+}
+
+#sent_order {
+    position: absolute;
+    bottom: 12%;
+    right: 70%;
+}
+
+#play_again {
+    position: absolute;
+    bottom: 5%;
+    right: 70%;
+}
+
+#game input[type="button"] {
+    background-color: #F4ACB7;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+    #game input[type="button"]:hover {
+        background-color: #BA828B;
+    }

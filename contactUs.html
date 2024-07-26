@@ -1,0 +1,134 @@
+﻿<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>צור קשר - SweetFreeze</title>
+    <meta name="description" content="צור קשר עם צוות SweetFreeze לכל שאלה או בקשה בנושא גלידה." />
+    <meta name="keywords" content="צור קשר, SweetFreeze, גלידה, פנייה, שאלה, הצעה" />
+    <meta name="author" content="פראדי הלפרין, נוי רומאני" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.1/build/pure-min.css" integrity="sha384-oAOxQR6DkCoMliIh8yFnu25d7Eq/PHS21PClpwjOTeU2jRSq11vu66rf90/cZr47" crossorigin="anonymous">
+
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- JS -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+
+    <link rel="icon" href="images/logo-sweetfreeze.png" />
+
+</head>
+<body id="contactus">
+    <nav id="mainNav" aria-label="main navigation">
+        <ul>
+            <li><a href="index.html"><img class="logo" src="images/logo-sweetfreeze.png" alt="לוגו SweetFreeze" /></a></li>
+            <li><a href="about.html">אודות</a></li>
+            <li>
+                <a class="emptyHyperLink" href="#">הגלידה</a>
+                <nav id="navIceCream" aria-label="ice cream menu">
+                    <ul>
+                        <li><a href="icecreamHistory.html">היסטוריה של הגלידה</a></li>
+                        <li><a class="emptyHyperLink" href="#">טעמים אהובים</a></li>
+                        <li><a class="emptyHyperLink" href="#">טעמים מוזרים</a></li>
+                        <li><a class="emptyHyperLink" href="#">מה עם פרווה?</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li>
+                <a class="emptyHyperLink" href="#">הגביע</a>
+                <nav id="navCone" aria-label="cone menu">
+                    <ul>
+                        <li><a class="emptyHyperLink" href="#">מקור הגביע</a></li>
+                        <li><a class="emptyHyperLink" href="#">כוס או גביע</a></li>
+                        <li><a href="coneTypes.html">סוגי גביעים</a></li>
+                        <li><a class="emptyHyperLink" href="#">צורת הגביע</a></li>
+                    </ul>
+                </nav>
+            </li>
+            <li><a href="contactUs.html">צור קשר</a></li>
+            <li><a href="siteMap.html">מפת האתר</a></li>
+            <li><a href="game.html">משחק</a></li>
+        </ul>
+    </nav>
+    <nav id="breadcrumbs" aria-label="breadcrumb">
+        <ul>
+            <li>
+                <a href="index.html">דף הבית</a>
+            </li>
+            <li>צור קשר</li>
+        </ul>
+    </nav>
+
+    <div class="circle" id="circle2"></div>
+    <div class="circle" id="circle3"></div>
+
+    <div class="contact-form-container">
+        <h1>צור קשר</h1>
+        <br />
+        <p>שדות המסומנים בכוכבית (*) הם שדות חובה.</p>
+        <form action="https://example.com/contact" method="post">
+            <div class="form-group">
+                <label for="name" class="sectiontitle">שם: <span class="text-danger">*</span></label>
+                <input type="text" id="name" name="name" pattern="[א-ת]+" title="אנא הזן תווים בעברית בלבד" required aria-label="name">
+            </div>
+
+            <div class="form-group">
+                <label for="phone" class="sectiontitle">טלפון: <span class="text-danger">*</span></label>
+                <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" title="אנא הזן מספר טלפון תקין בן 10 ספרות" required aria-label="phone">
+            </div>
+
+            <div class="form-group">
+                <label for="email" class="sectiontitle">אימייל: <span class="text-danger">*</span></label>
+                <input type="email" id="email" name="email" required aria-label="email">
+            </div>
+
+            <div class="form-group">
+                <label for="gender" class="sectiontitle">מין: <span class="text-danger">*</span></label>
+                <div class="radio-group" aria-label="gender">
+                    <label for="male">גבר</label>
+                    <input type="radio" id="male" name="gender" value="male" aria-label="male">
+
+                    <label for="female">אישה</label>
+                    <input type="radio" id="female" name="gender" value="female" aria-label="female">
+
+                    <label for="none">מעדיף.ה לא לבחור</label>
+                    <input type="radio" id="none" name="gender" value="none" aria-label="none">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="topic" class="sectiontitle">נושא הפנייה: <span class="text-danger">*</span></label>
+                <select id="topic" name="topic" required aria-label="topic">
+                    <option value="choose" selected>בחרו</option>
+                    <option value="history">רוצה עוד היסטוריה</option>
+                    <option value="error">מצאתי טעות</option>
+                    <option value="suggestion">יש לי הצעה לשיפור</option>
+                    <option value="other">אחר</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="heard-website" class="sectiontitle">איך שמעת על האתר שלנו? <span class="text-danger">*</span></label>
+                <div class="checkbox-group" aria-label="how did you hear about us">
+                    <label for="heard-website1"><input type="checkbox" id="heard-website1" name="heard-website" value="social-media" aria-label="social media"> רשתות חברתיות</label>
+                    <label for="heard-website2"><input type="checkbox" id="heard-website2" name="heard-website" value="friend" aria-label="friend"> חבר/ה</label>
+                    <label for="heard-website3"><input type="checkbox" id="heard-website3" name="heard-website" value="search-engine" aria-label="search engine"> מנוע חיפוש</label>
+                    <label for="heard-website4"><input type="checkbox" id="heard-website4" name="heard-website" value="advertisement" aria-label="advertisement"> פרסומת</label>
+                    <label for="heard-website5"><input type="checkbox" id="heard-website5" name="heard-website" value="other" aria-label="other"> אחר</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="message" class="sectiontitle">הודעה:</label>
+                <textarea id="message" name="message" rows="5" required aria-label="message"></textarea>
+            </div>
+
+            <div class="form-group">
+                <button type="submit" aria-label="submit">שלח</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
